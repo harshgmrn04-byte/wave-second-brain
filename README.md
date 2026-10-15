@@ -11,10 +11,10 @@ Requires Node.js and npm. From the repository root:
 ```sh
 cd frontend
 npm ci
-npm run dev -- --host 127.0.0.1
+npm run dev
 ```
 
-Open <http://127.0.0.1:5173/>. Stop the server with `Ctrl+C`. In `frontend/`, run `npm test` for the page test and `npm run build` for the TypeScript check and production bundle.
+Open the local URL Vite prints (usually <http://localhost:5173/>). Stop the server with `Ctrl+C`. In `frontend/`, run `npm test` for the page test and `npm run build` for the TypeScript check and production bundle.
 
 ## Run the API
 
