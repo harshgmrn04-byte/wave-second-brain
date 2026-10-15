@@ -1,0 +1,22 @@
+[project]
+name = "wave-backend"
+version = "0.1.0"
+description = "Wave's local API skeleton"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+]
+
+[dependency-groups]
+dev = [
+    "httpx",
+    "pytest",
+    "ruff",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
