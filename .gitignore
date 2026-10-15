@@ -4,6 +4,10 @@
 !.env.example
 !.env.*.example
 
+# Keep local planning notes and agent guidance off GitHub
+*.md
+!/README.md
+
 # JavaScript/TypeScript dependencies and build output
 node_modules/
 dist/
