@@ -1,0 +1,468 @@
+:root {
+  color-scheme: light;
+  --preview-detail-border: #ebf1ee;
+  --mark-wave: #fff;
+}
+
+/* base.css */
+:root {
+  color: #203b2b;
+  background: #f7faf8;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid #259353;
+}
+
+/* components/header.css */
+.brand-mark {
+  color: #207c49;
+}
+
+.brand-dot, .section-intro h2 span, .footer-brand span {
+  color: #209752;
+}
+
+.site-header nav a {
+  color: #55695d;
+}
+
+.site-header nav a:last-child {
+  border: 1px solid #dbe8e0;
+  color: #2b4b38;
+  background: #fff;
+}
+
+.site-header nav a:hover, .text-link:hover {
+  color: #249353;
+}
+
+.site-header nav a span[aria-hidden] {
+  color: #249353;
+}
+
+.theme-toggle {
+  border: 1px solid #dbe8e0;
+  background: #fff;
+  color: #207c49;
+}
+
+.theme-toggle:hover {
+  border-color: #209752;
+}
+
+.eyebrow {
+  color: #207c49;
+}
+
+.status-dot {
+  background: #209752;
+  box-shadow: 0 0 0 5px #eafaf1;
+}
+
+/* pages/landing.css */
+.hero-copy h1 em {
+  color: #209752;
+}
+
+.hero-copy > p {
+  color: #6c7f74;
+}
+
+.primary-link {
+  background: #207c49;
+  color: #fff;
+  box-shadow: 0 12px 24px #207c4935;
+}
+
+.primary-link:hover {
+  background: #17673a;
+}
+
+.text-link {
+  color: #207c49;
+}
+
+.hero-note {
+  color: #a1b0a7;
+}
+
+.preview-caption {
+  color: #9daca3;
+}
+
+.story-section {
+  background: #fff;
+  border-top: 1px solid #ecf2ee;
+}
+
+.section-intro p {
+  color: #73867b;
+}
+
+.story-steps > div {
+  border: 1px solid #e8f0eb;
+  background: #fbfdfb;
+}
+
+.story-steps span {
+  color: #207c49;
+}
+
+.story-steps p {
+  color: #829489;
+}
+
+.honesty-note {
+  border: 1px solid #e0f8ea;
+  background: #eefbf3;
+}
+
+.honesty-note > span {
+  color: #239552;
+}
+
+.honesty-note p {
+  color: #708a7b;
+}
+
+.site-footer {
+  border-top: 1px solid #e5ebe8;
+}
+
+.site-footer p {
+  color: #9aa9a0;
+}
+
+.site-footer > span:last-child {
+  color: #9eaca4;
+}
+
+/* components/journey.css */
+.journey-wrap::before {
+  background: #e8faef;
+}
+
+.journey-window {
+  background: #fff;
+  border: 1px solid #e5eee9;
+  box-shadow: 0 26px 70px #31533f23;
+}
+
+.window-bar {
+  border-bottom: 1px solid #eaf2ed;
+  color: #a5b3ab;
+}
+
+.window-dots i {
+  background: #d9e7df;
+}
+
+.window-symbol {
+  color: #207c49;
+}
+
+.window-sidebar {
+  border-right: 1px solid #edf4f0;
+}
+
+.sidebar-logo {
+  color: #207c49;
+}
+
+.sidebar-line {
+  background: #e4f1e9;
+}
+
+.sidebar-line.wide {
+  background: #a3e8c0;
+}
+
+.capture-type {
+  background: #fff;
+  border: 1px solid #e5eee9;
+  color: #7a8e82;
+}
+
+.capture-type.selected {
+  background: #effcf4;
+  color: #207c49;
+  border-color: #cef5de;
+}
+
+.capture-drop {
+  border: 1px dashed #c8e2d3;
+  background: #f8fcf9;
+}
+
+.drop-symbol {
+  background: #eafaf1;
+  color: #209752;
+}
+
+.capture-drop > span:last-child {
+  color: #9daca3;
+}
+
+.mock-action {
+  background: #207c49;
+  color: #fff;
+}
+
+.mock-action:hover {
+  background: #17673a;
+}
+
+.progress-step:not(:last-child)::after {
+  border-left: 1px dashed #c8ded1;
+}
+
+.step-mark {
+  border: 1px solid #deebe3;
+  color: #a4b2aa;
+  background: #fff;
+}
+
+.progress-step.complete .step-mark {
+  background: #e4f3ea;
+  border-color: #cce5d6;
+  color: #3a9a62;
+}
+
+.progress-step.current .step-mark {
+  background: #edfbf3;
+  border-color: #c9f4db;
+  color: #249353;
+  box-shadow: 0 0 0 5px #f6fdf9;
+}
+
+.progress-step strong {
+  color: #82958a;
+}
+
+.progress-step.complete strong, .progress-step.current strong {
+  color: #2c4135;
+}
+
+.progress-step div span {
+  color: #9caca3;
+}
+
+.step-status {
+  color: #209752;
+  background: #effcf4;
+}
+
+.placed-state {
+  border: 1px solid #d8eee1;
+  background: #f3faf6;
+  color: #418b60;
+}
+
+.placed-state small {
+  color: #85a492;
+}
+
+.stage-button {
+  background: transparent;
+  color: #9aafa3;
+}
+
+.stage-track {
+  background: #d9e7df;
+}
+
+.stage-button.active {
+  color: #2c8c54;
+}
+
+.stage-button.active .stage-track {
+  background: #229552;
+}
+
+.play-button {
+  border: 1px solid #dbeae1;
+  background: #fff;
+  color: #279153;
+}
+
+/* components/preview.css */
+.preview-shell {
+  background: #fff;
+  border: 1px solid #e4efe9;
+  box-shadow: 0 20px 50px #2e433712;
+}
+
+.preview-toolbar {
+  border-bottom: 1px solid #ebf3ee;
+  color: #95a59c;
+}
+
+.preview-brand {
+  color: #243d2e;
+}
+
+.preview-brand span {
+  color: #207c49;
+}
+
+.preview-map {
+  background: #f9fcfa;
+}
+
+.map-grid {
+  background-image: radial-gradient(#d8e8df 1px, transparent 1px);
+}
+
+.connection-line {
+  background: #bde8cf;
+}
+
+.map-card {
+  background: #fff;
+  color: #253d2f;
+  border: 1px solid #dfeae4;
+  box-shadow: 0 10px 26px #2b493816;
+}
+
+.map-card.active {
+  border-color: #209752;
+  box-shadow: 0 13px 30px #2a8d542c;
+}
+
+.card-icon {
+  color: #249452;
+  background: #eefbf3;
+}
+
+.card-text small {
+  color: #9aaba1;
+}
+
+.card-text > i {
+  background: #e6efea;
+}
+
+.space-card .card-icon {
+  background: #e3f3ea;
+  color: #407857;
+}
+
+.connection-card .card-icon {
+  background: #e0f8ea;
+  color: #318755;
+}
+
+.space-chips em {
+  background: #f2f8f4;
+  color: #82958a;
+}
+
+.map-hint {
+  color: #a2b2a9;
+}
+
+.preview-detail {
+  border-left: 1px solid #ebf1ee;
+}
+
+.detail-eyebrow {
+  color: #207c49;
+}
+
+.detail-illustration {
+  background: linear-gradient(135deg, #eafbf1, #f7fdf9);
+  color: #259253;
+}
+
+.preview-detail p {
+  color: #718579;
+}
+
+.related-actions > span {
+  color: #95a79c;
+}
+
+.related-actions button {
+  border: 1px solid #e6f2eb;
+  background: #f5fbf7;
+  color: #207c49;
+}
+
+.related-actions button:hover {
+  border-color: #aaedc6;
+}
+
+.detail-footer {
+  color: #9eaca4;
+  border-top: 1px solid #ecf1ee;
+}
+
+/* pages/auth.css */
+.auth-page {
+  background: #f7faf8;
+  color: #203b2b;
+}
+
+.auth-brand span {
+  color: #209752;
+}
+
+.auth-header > a:last-child {
+  color: #207c49;
+}
+
+.auth-panel {
+  border: 1px solid #e2ede6;
+  background: #fff;
+  box-shadow: 0 20px 50px #2e433712;
+}
+
+.auth-panel p {
+  color: #6c7f74;
+}
+
+.auth-panel p strong {
+  color: #203b2b;
+}
+
+.auth-action {
+  background: #207c49;
+  color: #fff;
+}
+
+.auth-action:hover {
+  background: #17673a;
+}
+
+.auth-error {
+  color: #a32f36 !important;
+}
+
+/* pages/library.css */
+.note-form textarea {
+  color: #203b2b;
+  background: #fbfdfb;
+  border: 1px solid #cbded1;
+}
+
+.note-form-footer span, .saved-note time {
+  color: #708777;
+}
+
+.notes-list-heading button, .notes-more {
+  color: #207c49;
+}
+
+.saved-note {
+  background: #fbfdfb;
+  border-color: #dfece3;
+}
+
+.saved-note-header button {
+  color: #a32f36;
+}

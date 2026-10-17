@@ -1,0 +1,181 @@
+.hero {
+  max-width: 1320px;
+  min-height: 680px;
+  margin: auto;
+  padding: 64px 48px 120px;
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-copy h1 {
+  font-size: clamp(3.6rem, 5.1vw, 5.4rem);
+  line-height: 1.08;
+  letter-spacing: -.082em;
+  margin: 23px 0 24px;
+}
+
+.hero-copy h1 em {
+  font-style: normal;
+}
+
+.hero-copy > p {
+  font-size: 16px;
+  line-height: 1.82;
+  max-width: 470px;
+  margin: 0;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  flex-wrap: wrap;
+  margin: 30px 0 16px;
+}
+
+.primary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 15px 19px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform .2s, background .2s;
+}
+
+.primary-link:hover {
+  transform: translateY(-2px);
+}
+
+.primary-link span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.text-link {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hero-note {
+  font-size: 11px;
+}
+
+.hero-side {
+  min-width: 0;
+}
+
+.preview-caption {
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 18px 0 0;
+}
+
+.story-section {
+  padding: 96px max(48px, calc((100vw - 1224px) / 2)) 100px;
+  scroll-margin-top: 30px;
+}
+
+.section-intro {
+  max-width: 660px;
+}
+
+.section-intro h2 {
+  font-size: clamp(2.3rem, 3.6vw, 3.5rem);
+  line-height: 1.14;
+  letter-spacing: -.07em;
+  margin: 13px 0 18px;
+}
+
+.section-intro p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.story-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 19px;
+  margin-top: 43px;
+}
+
+.story-steps > div {
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.story-steps span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.story-steps h3 {
+  font-size: 18px;
+  letter-spacing: -.04em;
+  margin: 26px 0 8px;
+}
+
+.story-steps p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.honesty-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1224px;
+  margin: 0 auto 90px;
+  padding: 28px 30px;
+  border-radius: 15px;
+}
+
+.honesty-note > span {
+  font-size: 25px;
+}
+
+.honesty-note h2 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.honesty-note p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 840px;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1320px;
+  min-height: 105px;
+  margin: auto;
+  padding: 0 48px;
+}
+
+.footer-brand {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -.06em;
+}
+
+.site-footer p {
+  font-size: 11px;
+  margin-right: auto;
+}
+
+.site-footer > span:last-child {
+  font-size: 10px;
+}
