@@ -1,9 +1,8 @@
 import { useAuthSession } from '../auth/useAuthSession'
-import ApiCheck from './ApiCheck'
 import NotesSection from './NotesSection'
 
 export default function LibraryPage() {
-  const { session, ready, error, signOut } = useAuthSession()
+  const { session, ready, error } = useAuthSession()
 
   if (!ready) return <><h1>Opening your library…</h1><p>Checking your session.</p></>
   if (error) return <>
@@ -22,7 +21,5 @@ export default function LibraryPage() {
     <p>Signed in as <strong>{session.user.email || 'your Google account'}</strong>.</p>
     <p>Save plain-text notes privately in your library.</p>
     <NotesSection session={session} />
-    <ApiCheck session={session} />
-    <button className="auth-action" type="button" onClick={signOut}>Sign out</button>
   </>
 }

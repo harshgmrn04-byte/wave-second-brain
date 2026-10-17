@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import type { Session } from '@supabase/supabase-js'
-import { signOut as signOutFromSupabase } from './actions'
 import { supabase } from './client'
 
 export function useAuthSession() {
@@ -38,15 +37,5 @@ export function useAuthSession() {
     }
   }, [])
 
-  const signOut = async () => {
-    setError('')
-    try {
-      await signOutFromSupabase()
-      setSession(null)
-    } catch (cause) {
-      setError(cause instanceof Error ? cause.message : 'Could not sign out.')
-    }
-  }
-
-  return { session, ready, error, signOut }
+  return { session, ready, error }
 }

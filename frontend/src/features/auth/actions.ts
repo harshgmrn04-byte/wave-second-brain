@@ -20,8 +20,3 @@ export async function completeSignIn(code: string): Promise<void> {
   const { error } = await requireAuthClient().auth.exchangeCodeForSession(code)
   if (error) throw error
 }
-
-export async function signOut(): Promise<void> {
-  const { error } = await requireAuthClient().auth.signOut()
-  if (error) throw error
-}
